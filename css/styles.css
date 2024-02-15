@@ -370,10 +370,14 @@ li {
   text-align: center;
 }
 
+#contact-area .container{
+  padding: 70px 0 0 0;
+}
+
 .contact-box {
   padding-bottom: 50px;
-  margin-bottom: 50px;
-  border-bottom: 1px solid #3EC1D5;
+  /*margin-bottom: 50px;
+  /* border-bottom: 1px solid #3EC1D5;*/
 }
 
 .contact-box i {
