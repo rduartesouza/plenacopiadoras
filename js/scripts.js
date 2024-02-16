@@ -22,7 +22,7 @@ $(document).ready(function () {
     step: function (state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 30000);
+      var value = Math.round(circle.value() * 15859);
       circle.setText(value);
 
     }
@@ -42,7 +42,7 @@ $(document).ready(function () {
     step: function (state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 900);
+      var value = Math.round(circle.value() * 1326);
       circle.setText(value);
 
     }
@@ -62,7 +62,7 @@ $(document).ready(function () {
     step: function (state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 32);
+      var value = Math.round(circle.value() * 12);
       circle.setText(value);
 
     }
