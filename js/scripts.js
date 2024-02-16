@@ -84,7 +84,6 @@ $(document).ready(function () {
 
       var value = Math.round(circle.value() * 50423);
       circle.setText(value);
-
     }
 
   });
@@ -103,7 +102,6 @@ $(document).ready(function () {
       circleB.animate(1.0);
       circleC.animate(1.0);
       circleD.animate(1.0);
-
       stop = 1;
     }
 
