@@ -1,3 +1,7 @@
+document.getElementById('send-contact-us').addEventListener("click", (e) => {
+  sendForm(e)
+})
+
 const hamburguer = document.querySelector(".hamburguer");
 const navMenu = document.querySelector(".nav-menu");
 

@@ -1,4 +1,7 @@
-function sendForm() {
+function sendForm(e) {
+
+    e.preventDefault()
+
     let url = ''
 
     let email = document.getElementById('email').value
