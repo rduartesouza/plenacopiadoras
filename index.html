@@ -5,13 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plena Copiadoras | Impressoras laser e toners</title>
+  <link rel="shortcut icon" type="image/png" href="/img/iconePlena.png">
   <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Scripts-->
@@ -38,7 +45,7 @@
         <img id="logo" src="img/logo.png" alt="Plena Copiadoras">
       </a>
       <ul class="nav-menu">
-        <li class="nav-item"><a id = "home-menu" class="nav-link">home</a></li>
+        <li class="nav-item"><a id="home-menu" class="nav-link">home</a></li>
         <li class="nav-item"><a id="about-menu" class="nav-link">empresa</a></li>
         <li class="nav-item"><a id="services-menu" class="nav-link">serviços</a></li>
         <!-- <li class="nav-item"><a id="team-menu" class="nav-link">time</a></li> -->
@@ -73,7 +80,7 @@
             </nav>
         </div> -->
   </header>
-  
+
   <main>
     <div class="container-fluid">
       <div id="mainSlider" class="carousel slide" data-ride="carousel">
@@ -210,7 +217,8 @@
             <div class="col-md-4 service-box">
               <i class="fas fa-server"></i>
               <h4>Locação</h4>
-              <p>Simplifique suas operações com nossa variedade de impressoras de última geração, prontas para atender às suas demandas de impressão.</p>
+              <p>Simplifique suas operações com nossa variedade de impressoras de última geração, prontas para atender
+                às suas demandas de impressão.</p>
             </div>
             <div class="col-md-4 service-box">
               <i class="fas fa-shopping-cart"></i>
@@ -220,22 +228,26 @@
             <div class="col-md-4 service-box">
               <i class="fas fa-phone"></i>
               <h4>Assistência Técnica</h4>
-              <p>Nossa equipe altamente qualificada e experiente está pronta para fornecer serviços de manutenção em impressoras de forma rápida e eficiente.</p>
+              <p>Nossa equipe altamente qualificada e experiente está pronta para fornecer serviços de manutenção em
+                impressoras de forma rápida e eficiente.</p>
             </div>
             <div class="col-md-4 service-box">
               <i class="fa fa-paint-brush"></i>
               <h4>Toner</h4>
-              <p>Mantenha sua operação em pleno funcionamento, sem interrupções, com nossos toners de alta qualidade. Temos uma ampla seleção para a maioria das marcas e modelos de impressoras.</p>
+              <p>Mantenha sua operação em pleno funcionamento, sem interrupções, com nossos toners de alta qualidade.
+                Temos uma ampla seleção para a maioria das marcas e modelos de impressoras.</p>
             </div>
             <div class="col-md-4 service-box">
               <i class="fas fa-print"></i>
               <h4>Impressoras</h4>
-              <p>Explore nossa ampla variedade de impressoras das principais marcas do mercado. Oferecemos opções para todos os tipos de negócios e orçamentos.</p>
+              <p>Explore nossa ampla variedade de impressoras das principais marcas do mercado. Oferecemos opções para
+                todos os tipos de negócios e orçamentos.</p>
             </div>
             <div class="col-md-4 service-box">
               <i class="fas fa-hands-helping"></i>
               <h4>Suporte</h4>
-              <p>Nossa equipe especializada está sempre disponível para ajudá-lo, garantindo a continuidade dos seus negócios.</p>
+              <p>Nossa equipe especializada está sempre disponível para ajudá-lo, garantindo a continuidade dos seus
+                negócios.</p>
             </div>
           </div>
         </div>
@@ -342,62 +354,88 @@
                 </div>
               </div>
             </div> -->
-          </div>
-        </div>
-      </div> 
-      <!-- Portfólio -->
-      <div id="portfolio-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="main-title">Conheça nossos projetos</h3>
-            </div>
-            <div class="col-md-12" id="filter-btn-box">
-              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
-              <button class="main-btn filter-btn" id="dev-btn">Assistência Técnica</button>
-              <button class="main-btn filter-btn" id="dsg-btn">Locação de Equipamentos</button>
-              <button class="main-btn filter-btn" id="seo-btn">Remanufatura de Cartuchos</button>
-            </div>
-            <div class="col-md-4 project-box dev">
-              <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
-            </div>
-            <div class="col-md-4 project-box dsg">
-              <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
-            </div>
-            <div class="col-md-4 project-box seo">
-              <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
-            </div>
-            <div class="col-md-4 project-box dev">
-              <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
-            </div>
-            <div class="col-md-4 project-box dsg">
-              <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
-            </div>
-            <div class="col-md-4 project-box seo">
-              <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Newsletter -->
-      <div id="news-area">
-        <div class="container">
+    </div>
+    </div>
+    </div>
+    <!-- Portfólio -->
+    <div id="portfolio-area">
+      <div class="container">
+        <div class="row">
           <div class="col-md-12">
-            <h3 class="main-title">Fique por dentro das novidades</h3>
+            <h3 class="main-title">Conheça nossos projetos</h3>
           </div>
-          <p>Inscreva-se em nossa lista de transmissão para receber novidades e ofertas exclusivas.</p>
-          <form action="">
-            <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
-            <input type="submit" id="news-btn" value="Inscrever">
-          </form>
+          <div class="col-md-12" id="filter-btn-box">
+            <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+            <button class="main-btn filter-btn" id="dev-btn">Assistência Técnica</button>
+            <button class="main-btn filter-btn" id="dsg-btn">Locação de Equipamentos</button>
+            <button class="main-btn filter-btn" id="seo-btn">Remanufatura de Cartuchos</button>
+          </div>
+          <div class="col-md-4 project-box dev">
+            <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
+          </div>
+          <div class="col-md-4 project-box dsg">
+            <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
+          </div>
+          <div class="col-md-4 project-box seo">
+            <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
+          </div>
+          <div class="col-md-4 project-box dev">
+            <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
+          </div>
+          <div class="col-md-4 project-box dsg">
+            <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
+          </div>
+          <div class="col-md-4 project-box seo">
+            <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
+          </div>
         </div>
       </div>
-      <!-- Call to Action -->
-      <div id="call-area">
-        <div class="container">
-          <div class="row">
-            <p>Deseja fazer um orçamento sem compromisso?</p>
-            <button class="main-btn" id="call-btn">Orçar</button>
+    </div>
+    <!-- Newsletter -->
+    <div id="news-area">
+      <div class="container">
+        <div class="col-md-12">
+          <h3 class="main-title">Fique por dentro das novidades</h3>
+        </div>
+        <p>Inscreva-se em nossa lista de transmissão para receber novidades e ofertas exclusivas.</p>
+        <form action="">
+          <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+          <input type="button" id="news-btn" value="Inscrever">
+        </form>
+      </div>
+    </div>
+    <!-- Call to Action -->
+    <div id="call-area">
+      <div class="container">
+        <div class="row">
+          <p>Deseja fazer um orçamento sem compromisso?</p>
+          <button type="button" class="main-btn" data-bs-toggle="modal" data-bs-target="#modal-contact-us"
+            id="call-btn">Orçar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Contact Us -->
+    <div class="modal fade" id="modal-contact-us" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="./img/iconePlena.png" alt="Banner Plena">
+            <h4 class="modal-title fs-5">Nos Envie uma Mensagem</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" id="form-contact-us">
+              <input type="text" class="form-control" placeholder="E-mail" name="email" id="email">
+              <input type="text" class="form-control" placeholder="Assunto" name="subject" id="subject">
+              <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"
+                id="message"></textarea>
+              <button type="submit" id="send-contact-us"> 
+                <img src="img/iconePlena.png"> 
+                <p>Enviar</p>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -406,22 +444,28 @@
   <!-- Rodapé -->
   <footer>
     <div id="contact-area">
-      <div class="container">
+      <div class="container-contact-box">
         <div class="row">
           <div class="col-md-12">
             <h3 class="main-title">Fale conosco</h3>
           </div>
-          <div class="col-md-4 contact-box">
-            <i class="fas fa-phone"></i>
+          <div class="col-lg-3 contact-box">
+            <a href=""><i class="bi bi-telephone"></i></a>
+
             <p><span class="contact-tile">Fone:</span> (67) 3421-7070</p>
             <!-- <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p> -->
           </div>
-          <div class="col-md-4 contact-box">
-            <i class="fas fa-envelope"></i>
+          <div class="col-lg-3 contact-box">
+            <a href=""><i class="bi bi-envelope-at"></i></a>
             <p><span class="contact-tile">Envie um email:</span> comercial@plenacopiadoras.com.br</p>
           </div>
-          <div class="col-md-4 contact-box">
-            <i class="fas fa-map-marker-alt"></i>
+          <div class="col-lg-3 contact-box">
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+            <p><span class="contact-tile">Envie sua mensagem:</span> (67) 99999-9999</p>
+          </div>
+          <div class="col-lg-3 contact-box">
+            <a href="https://www.google.com/maps/search/?api=1&query=2686+Rua+Ciro+Melo,+Durados,+MS" target="_blank"><i class="bi bi-geo-alt"></i></a>
+
             <p><span class="contact-tile">Venha tomar um café:</span> Rua Ciro Melo, 2686 </p>
           </div>
 
@@ -429,19 +473,14 @@
             <p>Ou nos deixe uma mensagem:</p>
           </div>
           <div class="col-md-6" id="contact-form">
-            <form action="" id = "form-contact-us">
-              <input type="text" class="form-control" placeholder="E-mail" name="email" id = "email">
-              <input type="text" class="form-control" placeholder="Assunto" name="subject" id = "subject">
-              <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"  id = "message"></textarea>
-              <input type="submit" class="main-btn">
-            </form>
+            
           </div> -->
         </div>
       </div>
     </div>
     <div id="copy-area">
       <div class="container">
-        <div class="row"> 
+        <div class="row">
           <div class="col-md-12">
             <p>Todos os direitos reservados <a href="https://www.plenacopiadoras.com.br" target="_blank">Plena
                 Copiadoras. </a>Copyright &copy; 2024</p>

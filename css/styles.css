@@ -19,7 +19,7 @@ li {
 
 /* Barra de navegação */
 
-.nav-item{
+.nav-item {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 16px;
@@ -103,6 +103,7 @@ li {
   padding: 10px 20px;
   border-radius: 30px;
   border: 3px solid transparent;
+  text-decoration: none;
   transition: .5s;
 }
 
@@ -370,25 +371,26 @@ li {
   text-align: center;
 }
 
-#contact-area .container{
+#contact-area .container-contact-box {
   padding: 70px 0 0 0;
 }
 
-.contact-box {
-  padding-bottom: 50px;
-  /*margin-bottom: 50px;
-  /* border-bottom: 1px solid #3EC1D5;*/
+.contact-box p{
+  padding-bottom: 50px; 
+}
+
+.contact-box p{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  
 }
 
 .contact-box i {
   color: #444;
-  border: solid 1px #444;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
   font-size: 24px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .contact-box p {
@@ -646,7 +648,7 @@ li {
 }
 
 .navbar a:not([href]):not([tabindex]) {
-  color: #0088d2;
+  color: hsl(193, 50%, 56%);
   text-decoration: none;
   cursor: pointer;
 }
@@ -665,6 +667,10 @@ li {
   z-index: 1030;
 }
 
+.navbar .nav-menu {
+  padding-left: 0;
+}
+
 .logo {
   font-size: 2rem;
   font-weight: bold;
@@ -681,18 +687,18 @@ li {
 }
 
 .nav-link:hover {
-  color: #0088d2;
+  color: hsl(193, 50%, 56%);
   transform: scale(1.1);
 }
 
 .hamburguer {
   display: none;
   cursor: pointer;
-  color: #0088d2
+  color: hsl(193, 50%, 56%)
 }
 
-.hamburguer .bar{
-  background-color: #0088d2
+.hamburguer .bar {
+  background-color: hsl(193, 50%, 56%)
 }
 
 .bar {
@@ -738,7 +744,7 @@ li {
     top: 100px;
     gap: 0;
     border-radius: 0 0 20px 20px;
-    background-color: #101026;
+    background-color: #b5dde2;
     text-align: center;
     flex-direction: column;
     width: 100%;
@@ -746,7 +752,7 @@ li {
   }
 
   .nav-item .nav-link {
-    color: #FFF !important;
+    color: #437f88 !important;
   }
 
   .nav-item {
@@ -756,4 +762,58 @@ li {
   .nav-menu.active {
     left: 0;
   }
+}
+
+/* estilos para o modal de entre em contato conosco */
+
+#modal-contact-us .modal-content {
+  background-color: #5c7e88;
+}
+
+#modal-contact-us .modal-header {
+  border-bottom: none;
+}
+
+#modal-contact-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+#modal-contact-us #send-contact-us {
+  border: none;
+  border-radius: 8px;
+  background-color: #174248;
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem .7rem;
+}
+
+#modal-contact-us #send-contact-us:hover {
+  border: 2px solid #3EC1D5;
+  background-color: transparent;
+  transform: scale(1.1);
+}
+
+#modal-contact-us #send-contact-us img {
+  width: 30px;
+}
+
+#modal-contact-us #send-contact-us p {
+  border: none;
+  color: #FFF;
+  margin-bottom: 0;
+}
+
+#modal-contact-us .modal-header {
+  color: #FFF;
+}
+
+#modal-contact-us .modal-header img {
+  width: 40px;
+  margin-right: 10px;
 }
