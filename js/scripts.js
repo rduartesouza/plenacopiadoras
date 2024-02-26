@@ -1,3 +1,4 @@
+
 document.getElementById('send-contact-us').addEventListener("click", (e) => {
   sendForm(e)
 })
@@ -163,9 +164,10 @@ $(document).ready(function () {
   let bannerSection = $('#mainSlider');
   let aboutSection = $('#about-area');
   let servicesSection = $('#service-area');
-  let teamSection = $('#team-area');
+  //let teamSection = $('#team-area');
   let portfolioSection = $('#portfolio-area');
   let contactSection = $('#contact-area');
+
 
   let scrollTo = '';
 
@@ -175,6 +177,7 @@ $(document).ready(function () {
 
     if (btnId == 'about-menu') {
       scrollTo = aboutSection;
+      //scrollTo(0, (663 - 135));
     } else if (btnId == 'services-menu') {
       scrollTo = servicesSection;
     } else if (btnId == 'team-menu') {
@@ -188,8 +191,8 @@ $(document).ready(function () {
     }
 
     $([document.documentElement, document.body]).animate({
-      scrollTop: $(scrollTo).offset().top - 70
-    }, 1500);
+      scrollTop: $(scrollTo).offset().top - 50
+    }, 50 /*tempo meio segundo para iniciar*/);
 
     if (document.querySelector('.hamburguer').classList.contains('active')) {
       document.querySelector('.hamburguer').click()
@@ -197,3 +200,20 @@ $(document).ready(function () {
   });
 
 });
+
+document.getElementById("veja_nossos_produtos").onclick = function () {
+  scrollTo(0, 1878);
+}
+
+document.getElementById("fale_conosco_banner02").onclick = function () {
+  scrollTo(0, (4082 - 135));
+
+  // var el = document.getElementById('service-area');
+  // var coordenadas = el.getBoundingClientRect();
+  // console.log('posição x', coordenadas.left, 'posição y', coordenadas.top);
+}
+
+document.getElementById("fale_conosco_banner03").onclick = function () {
+  scrollTo(0, (4082 - 135));
+}
+

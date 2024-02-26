@@ -70,13 +70,12 @@ li {
   padding: 0;
 }
 
-#mainSlider .carousel-inner,
-#mainSlider .carousel-item {
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
   height: 90vh
 }
 
 .carousel-item img {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #mainSlider .carousel-caption {
@@ -115,7 +114,7 @@ li {
 }
 
 .carousel-indicators .active {
-  background-color: hsl(193, 50%, 56%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 /* Sobre a empresa */
@@ -388,7 +387,7 @@ li {
 
 .contact-box i {
   color: #444;
-  font-size: 24px;
+  font-size: 38px;
   margin-bottom: 20px;
   cursor: pointer;
 }

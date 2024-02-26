@@ -83,19 +83,20 @@
 
   <main>
     <div class="container-fluid">
-      <div id="mainSlider" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
-          <li data-target="#mainSlider" data-slide-to="1"></li>
-          <li data-target="#mainSlider" data-slide-to="2"></li>
-        </ol>
+      <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img/banner1.jpeg" class="d-block w-100" alt="Banner 01">
             <div class="carousel-caption d-nome d-md-block">
               <h2 class="msg-item">Deseja multiplicar seus lucros?</h2>
               <p>Otimize sua produtividade com nossas soluções de impressão sob medida.</p>
-              <a href="#" class="main-btn">Veja nossos produtos</a>
+              <a id="veja_nossos_produtos" class="main-btn">Veja nossos produtos</a>
             </div>
           </div>
           <div class="carousel-item">
@@ -103,7 +104,7 @@
             <div class="carousel-caption d-nome d-md-block">
               <h2>Inovação em impressoras ao alcance da sua mão</h2>
               <p> Venha conhecer nossos produtos.</p>
-              <a href="#" class="main-btn">Fale Conosco</a>
+              <a id="fale_conosco_banner02" class="main-btn">Fale Conosco</a>
             </div>
           </div>
           <div class="carousel-item">
@@ -111,18 +112,18 @@
             <div class="carousel-caption d-nome d-md-block">
               <h2>Sua satisfação é a nossa prioridade</h2>
               <p>Nosso time esta preparado para oferecer um atendimento personalizado e eficiente.</p>
-              <a href="#" class="main-btn">Fale Conosco</a>
+              <a id="fale_conosco_banner03" class="main-btn">Fale Conosco</a>
             </div>
           </div>
         </div>
-        <a href="#mainSlider" class="carousel-control-prev" role="buton" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a href="#mainSlider" class="carousel-control-next" role="buton" data-slide="next">
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
       <!-- Sobre a Empresa -->
       <div id="about-area">
@@ -354,9 +355,7 @@
                 </div>
               </div>
             </div> -->
-    </div>
-    </div>
-    </div>
+
     <!-- Portfólio -->
     <div id="portfolio-area">
       <div class="container">
@@ -368,7 +367,7 @@
             <button class="main-btn filter-btn active" id="all-btn">Todos</button>
             <button class="main-btn filter-btn" id="dev-btn">Assistência Técnica</button>
             <button class="main-btn filter-btn" id="dsg-btn">Locação de Equipamentos</button>
-            <button class="main-btn filter-btn" id="seo-btn">Remanufatura de Cartuchos</button>
+            <button class="main-btn filter-btn" id="seo-btn">Revenda</button>
           </div>
           <div class="col-md-4 project-box dev">
             <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
@@ -431,8 +430,8 @@
               <input type="text" class="form-control" placeholder="Assunto" name="subject" id="subject">
               <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"
                 id="message"></textarea>
-              <button type="submit" id="send-contact-us"> 
-                <img src="img/iconePlena.png"> 
+              <button type="submit" id="send-contact-us">
+                <img src="img/iconePlena.png">
                 <p>Enviar</p>
               </button>
             </form>
@@ -455,18 +454,21 @@
             <!-- <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p> -->
           </div>
           <div class="col-lg-3 contact-box">
-            <a href="mailto:comercial@plenacopiadoras.com.br?subject=Estou vindo pelo site da Plena"><i class="bi bi-envelope-at"></i></a>
+            <a href="mailto:comercial@plenacopiadoras.com.br?subject=Estou vindo pelo site da Plena"><i
+                class="bi bi-envelope-at"></i></a>
             <p><span class="contact-tile">Envie um email:</span> comercial@plenacopiadoras.com.br</p>
           </div>
           <div class="col-lg-3 contact-box">
-            <a href="https://api.whatsapp.com/send/?phone=55067996482486&text&app_absent=0" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=556734217070&text=Olá,%20tudo%20bem?%20Estou%20interessado%20nos%20servi%C3%A7os%20oferecidos%20pela%20Plena%20Copiadoras." target="_blank"><i
+                class="bi bi-whatsapp"></i></a>
             <p><span class="contact-tile">Envie sua mensagem:</span> (67) 3424-7070</p>
           </div>
           <div class="col-lg-3 contact-box">
-            <a href="https://www.google.com/maps/search/?api=1&query=2686+Rua+Ciro+Melo,+Durados,+MS" target="_blank"><i class="bi bi-geo-alt"></i></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=2686+Rua+Ciro+Melo,+Durados,+MS" target="_blank"><i
+                class="bi bi-geo-alt"></i></a>
 
             <p><span class="contact-tile">Venha tomar um café:</span> Rua Ciro Melo, 2686 </p>
-          </div>
+          </div> 
 
           <!-- <div class="col-md-6" id="msg-box">
             <p>Ou nos deixe uma mensagem:</p>
