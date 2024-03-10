@@ -820,6 +820,7 @@ li {
 .redes ul {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 .redes ul a {
 display: block;
